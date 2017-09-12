@@ -32,23 +32,12 @@
             this.Cars = new System.Windows.Forms.Button();
             this.Companies = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.EditButton = new System.Windows.Forms.Button();
-            this.DeleteButton = new System.Windows.Forms.Button();
+            this.AddCar = new System.Windows.Forms.Button();
+            this.AddCompany = new System.Windows.Forms.Button();
+            this.AddProduct = new System.Windows.Forms.Button();
             Products = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Cars
-            // 
-            this.Cars.BackColor = System.Drawing.Color.FloralWhite;
-            this.Cars.ImageKey = "(none)";
-            this.Cars.Location = new System.Drawing.Point(12, 21);
-            this.Cars.Name = "Cars";
-            this.Cars.Size = new System.Drawing.Size(94, 64);
-            this.Cars.TabIndex = 0;
-            this.Cars.Text = "Cars";
-            this.Cars.UseVisualStyleBackColor = false;
-            this.Cars.Click += new System.EventHandler(this.Cars_Click);
             // 
             // Products
             // 
@@ -60,6 +49,19 @@
             Products.Text = "Products";
             Products.UseVisualStyleBackColor = false;
             Products.Click += new System.EventHandler(this.Products_Click);
+            // 
+            // Cars
+            // 
+            this.Cars.BackColor = System.Drawing.Color.FloralWhite;
+            this.Cars.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Cars.ImageKey = "(none)";
+            this.Cars.Location = new System.Drawing.Point(12, 21);
+            this.Cars.Name = "Cars";
+            this.Cars.Size = new System.Drawing.Size(94, 64);
+            this.Cars.TabIndex = 0;
+            this.Cars.Text = "Cars";
+            this.Cars.UseVisualStyleBackColor = false;
+            this.Cars.Click += new System.EventHandler(this.Cars_Click);
             // 
             // Companies
             // 
@@ -76,30 +78,40 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(135, 21);
+            this.dataGridView1.Location = new System.Drawing.Point(138, 21);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(354, 204);
+            this.dataGridView1.Size = new System.Drawing.Size(377, 204);
             this.dataGridView1.TabIndex = 3;
             // 
-            // EditButton
+            // AddCar
             // 
-            this.EditButton.Location = new System.Drawing.Point(172, 239);
-            this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(75, 23);
-            this.EditButton.TabIndex = 4;
-            this.EditButton.Text = "Add/Edit";
-            this.EditButton.UseVisualStyleBackColor = true;
-            this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
+            this.AddCar.Location = new System.Drawing.Point(138, 273);
+            this.AddCar.Name = "AddCar";
+            this.AddCar.Size = new System.Drawing.Size(82, 46);
+            this.AddCar.TabIndex = 4;
+            this.AddCar.Text = "Add Car";
+            this.AddCar.UseVisualStyleBackColor = true;
+            this.AddCar.Click += new System.EventHandler(this.AddCar_Click);
             // 
-            // DeleteButton
+            // AddCompany
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(352, 238);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(75, 23);
-            this.DeleteButton.TabIndex = 5;
-            this.DeleteButton.Text = "Delete";
-            this.DeleteButton.UseVisualStyleBackColor = true;
-            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            this.AddCompany.Location = new System.Drawing.Point(431, 273);
+            this.AddCompany.Name = "AddCompany";
+            this.AddCompany.Size = new System.Drawing.Size(84, 46);
+            this.AddCompany.TabIndex = 6;
+            this.AddCompany.Text = "Add Company";
+            this.AddCompany.UseVisualStyleBackColor = true;
+            this.AddCompany.Click += new System.EventHandler(this.AddCompany_Click);
+            // 
+            // AddProduct
+            // 
+            this.AddProduct.Location = new System.Drawing.Point(279, 273);
+            this.AddProduct.Name = "AddProduct";
+            this.AddProduct.Size = new System.Drawing.Size(85, 46);
+            this.AddProduct.TabIndex = 8;
+            this.AddProduct.Text = "Add Product";
+            this.AddProduct.UseVisualStyleBackColor = true;
+            this.AddProduct.Click += new System.EventHandler(this.AddProduct_Click);
             // 
             // ShopGui
             // 
@@ -107,9 +119,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(515, 274);
-            this.Controls.Add(this.DeleteButton);
-            this.Controls.Add(this.EditButton);
+            this.ClientSize = new System.Drawing.Size(569, 384);
+            this.Controls.Add(this.AddProduct);
+            this.Controls.Add(this.AddCompany);
+            this.Controls.Add(this.AddCar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Companies);
             this.Controls.Add(Products);
@@ -126,8 +139,9 @@
         private System.Windows.Forms.Button Cars;
         private System.Windows.Forms.Button Companies;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button EditButton;
-        private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.Button AddCar;
+        private System.Windows.Forms.Button AddCompany;
+        private System.Windows.Forms.Button AddProduct;
     }
 }
 

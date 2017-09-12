@@ -2,9 +2,6 @@
 {
     public class Car
     {
-        private string model;
-        private int yearOfManufacture;
-        private string brand;
 
         public Car(string model, int yearOfManufacture, string brand)
         {

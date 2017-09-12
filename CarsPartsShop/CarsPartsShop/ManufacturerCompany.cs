@@ -2,11 +2,6 @@
 {
     public class ManufacturerCompany
     {
-        private string brand;
-        private string country;
-        private string address;
-        private string phoneNumber;
-
         public ManufacturerCompany(string brand, string country, string address, string phoneNumber)
         {
             this.Brand = brand;
@@ -15,9 +10,9 @@
             this.PhoneNumber = phoneNumber;
         }
 
-        public string Brand { get; private set; }
-        public string Country { get; private set; }
-        public string Address { get; private set; }
-        public string PhoneNumber { get; private set; }
+        public string Brand { get; set; }
+        public string Country { get; set; }
+        public string Address { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }
